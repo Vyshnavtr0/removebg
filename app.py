@@ -28,4 +28,4 @@ def remove_bg():
     return send_file(img_io, mimetype='image/png')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+    app.run_server(debug=True, port=8050, host='0.0.0.0')
